@@ -31,7 +31,7 @@ def scan_complete(MANAGED_VALUES):
     sys.stdout.write('Results saved in '+str(MANAGED_VALUES['target']+'\n'))
     if len(MANAGED_VALUES['skipped']) > 0:
         sys.stdout.write('\nNot scanned:\n')
-        print(*MANAGED_VALUES['skipped'], sep='\n')
+        print(MANAGED_VALUES['skipped'], sep='\n')
     sys.exit(0)
 
 
